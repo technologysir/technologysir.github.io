@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+body::before {
+  content: "";
+  display: block;
+  height: 5rem;
+}
+
+nav, .nav {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.0431372549);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+}
+@media only screen and (max-width: 1194px) {
+  nav, .nav {
+    display: grid;
+    justify-content: center;
+  }
+}
+nav-l, .nav-l {
+  flex: 25% 0 0;
+  max-width: 360px;
+}
+@media only screen and (max-width: 1194px) {
+  nav-l, .nav-l {
+    display: none;
+  }
+}
+nav-m, .nav-m {
+  flex: 50% 0 0;
+  max-width: 680px;
+}
+nav-r, .nav-r {
+  flex: 25% 0 0;
+  max-width: 360px;
+}
+nav .inputbox, .nav .inputbox {
+  justify-content: space-around;
+  align-items: center;
+}
+nav .inputbox label, .nav .inputbox label {
+  width: 100%;
+}
+nav .inputbox input, .nav .inputbox input {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #fafafa;
+  width: inherit;
+  font-size: 0.9375rem;
+  gap: 10px;
+}
+nav .technonewslogo, .nav .technonewslogo {
+  justify-content: space-around;
+  align-items: center;
+}
+nav .ti, .nav .ti {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+nav .ti .active, .nav .ti .active {
+  color: white;
+  background-color: #197ef9;
+}
+nav .ti :hover, .nav .ti :hover {
+  background-color: #f9f9f9;
+  color: #000;
+}
+nav .ti-si, .nav .ti-si {
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+nav a, .nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.pt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.pt .box {
+  position: relative;
+  flex: 65% 0 0;
+  max-width: 680px;
+  border-radius: 0.9375rem;
+  background-color: white;
+}
+@media only screen and (max-width: 1194px) {
+  .pt .box {
+    max-width: 230px;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  font-size: 8rem;
+}
+@media only screen and (max-width: 1194px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.hov .colm {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border-radius: 0.9375rem;
+}
+@media only screen and (max-width: 1194px) {
+  .hov .colm {
+    display: grid;
+  }
+}
+.hov .colm img {
+  border-radius: 0.9375rem;
+  background-color: black;
+  background-blend-mode: multiply;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+.hov .colm .imgtxt {
+  color: #000;
+}
+.hov :hover {
+  background-color: rgba(0, 0, 0, 0.1254901961);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.tem {
+  direction: rtl;
+  margin: 5px;
+}
+
+.titlete {
+  display: flex;
+  justify-content: right;
+  font-size: 1.6rem;
+  margin: 5px;
+  direction: rtl;
+}
+
+.img {
+  border-radius: 0.9375rem;
+  width: 670px;
+  height: 360px;
+  margin: 2px 5px;
+}
+
+.textlog {
+  margin: 10px 10px;
+}/*# sourceMappingURL=sylt.css.map */

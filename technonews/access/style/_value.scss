@@ -1,0 +1,36 @@
+@function rem ($value) {
+   $remvalue:$value;
+   @if (type-of($value) == number) {
+    $remvalue: calc($value / 16)+rem;
+
+   }
+   @return $remvalue
+}
+
+$font:Segoe UI Historic,Segoe UI,Helvetica,Arial,sans-serif;
+$BG:#f0f0f0;
+//$BG:#565656;
+$ic:#656565;
+$ibc:#e4e4e4;
+$aic:#197ef9;
+$a: #f9f9f9;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: $BG;
+    font-family: $font;
+    &::before{
+        content: '';
+        display: block;
+        height: rem(80);
+        @media only screen and (max-width:1194px) {
+            display: block;
+            height: rem(120);
+             }
+    }
+}

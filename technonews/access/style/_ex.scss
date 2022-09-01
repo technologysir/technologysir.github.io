@@ -1,0 +1,30 @@
+.exe{
+  position: fixed;
+  background-color: #fff;
+  width: 134px;
+  border-radius: rem(15);
+  &-e{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    padding: rem(10) 0;
+    font-size: 1rem;
+    border-radius: rem(10);
+    
+    i{
+        color: $aic;
+        font-size: 2rem;
+        
+    }
+     
+    }
+    :hover{
+        background-color: $a;
+        color: #000000;
+        }
+}
+a{
+  color: #000;
+  text-decoration: none;
+}

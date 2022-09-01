@@ -1,0 +1,65 @@
+.pt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    .box {
+        position: relative;
+    flex: 65% 0 0;
+    max-width: 680px;
+    border-radius: rem(15);
+    background-color: white;
+    @media only screen and (max-width:1194px) {
+         max-width: 230px;
+        }
+    }
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-size: 8rem;
+    @media only screen and (max-width:1194px) {
+        font-size: 4rem;
+       }
+}
+.hov{
+.colm {
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: rem(15);
+    @media only screen and (max-width:1194px) {
+        display: grid;
+       }
+    img{
+        border-radius: rem(15);
+        background-color: black;
+        background-blend-mode: multiply;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .imgtxt{
+        color: #000
+        ;
+    }
+}
+:hover{
+    background-color: #00000020;
+}
+
+}
+a {
+    color: #000;
+    text-decoration: none;
+  }
+  h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }

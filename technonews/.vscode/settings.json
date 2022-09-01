@@ -1,0 +1,6 @@
+{
+    "liveSassCompile.settings.partialsList": [
+        "/**/_*.s[ac]ss",
+    ],
+    "liveServer.settings.port": 5501
+}

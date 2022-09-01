@@ -1,0 +1,29 @@
+.events {
+    &-e {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       gap: 10px;
+       margin: rem(10) 0;
+       border-radius: 5px;
+        img {
+            max-width: 115px;
+            border-radius: rem(5);
+            margin: 0 rem(10);
+
+          
+        }
+        
+    }
+      :hover{
+                background-color: $a;
+                color: #000000;
+            }
+}
+
+.tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50;
+}

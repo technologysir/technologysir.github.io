@@ -1,0 +1,403 @@
+.parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 10px;
+}
+@media only screen and (max-width: 1194px) {
+  .parts {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+}
+.parts-l {
+  flex: 10% 0 0;
+  max-width: 360px;
+  border-radius: 15px;
+  max-height: 210px;
+}
+@media only screen and (max-width: 1194px) {
+  .parts-l {
+    display: none;
+  }
+}
+.parts-m {
+  flex: 65% 0 0;
+  background-color: #ffffff;
+  max-width: 680px;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 1194px) {
+  .parts-m {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.parts-r {
+  flex: 25% 0 0;
+  background-color: #ffffff;
+  max-width: 360px;
+  border-radius: 15px;
+  max-height: 360px;
+}
+@media only screen and (max-width: 1194px) {
+  .parts-r {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #f0f0f0;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+body::before {
+  content: "";
+  display: block;
+  height: 5rem;
+}
+@media only screen and (max-width: 1194px) {
+  body::before {
+    display: block;
+    height: 7.5rem;
+  }
+}
+
+nav, .nav {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.0431372549);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+}
+@media only screen and (max-width: 1194px) {
+  nav, .nav {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+}
+nav-l, .nav-l {
+  flex: 25% 0 0;
+  max-width: 360px;
+}
+@media only screen and (max-width: 1194px) {
+  nav-l, .nav-l {
+    display: none;
+  }
+}
+nav-m, .nav-m {
+  flex: 50% 0 0;
+  max-width: 680px;
+}
+nav-r, .nav-r {
+  flex: 25% 0 0;
+  max-width: 360px;
+}
+nav .inputbox, .nav .inputbox {
+  justify-content: space-around;
+  align-items: center;
+}
+nav .inputbox label, .nav .inputbox label {
+  width: 100%;
+}
+nav .inputbox input, .nav .inputbox input {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #fafafa;
+  width: inherit;
+  font-size: 0.9375rem;
+  gap: 10px;
+}
+nav technonewslogo, .nav technonewslogo {
+  justify-content: space-around;
+  align-items: center;
+}
+nav .ti, .nav .ti {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+nav .ti .active, .nav .ti .active {
+  color: white;
+  background-color: #197ef9;
+}
+nav .ti :hover, .nav .ti :hover {
+  background-color: #f9f9f9;
+  color: #000;
+}
+nav .ti-si, .nav .ti-si {
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.exe {
+  position: fixed;
+  background-color: #fff;
+  width: 134px;
+  border-radius: 0.9375rem;
+}
+.exe-e {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  border-radius: 0.625rem;
+}
+.exe-e i {
+  color: #197ef9;
+  font-size: 2rem;
+}
+.exe :hover {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.events-e {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0.625rem 0;
+  border-radius: 5px;
+}
+.events-e img {
+  max-width: 115px;
+  border-radius: 0.3125rem;
+  margin: 0 0.625rem;
+}
+.events :hover {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+.tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50;
+}
+
+.wed-home {
+  background-image: url("../../access/img/wedhome.svg");
+  position: relative;
+  width: 41.25rem;
+  height: 22.5rem;
+  flex: 90% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1882352941);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-blend-mode: multiply;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0.625rem;
+}
+@media only screen and (max-width: 1194px) {
+  .wed-home {
+    width: 242.8571428571px;
+    height: 170px;
+  }
+}
+.wed-home-txt {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5450980392);
+}
+
+.wed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 1194px) {
+  .wed {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.wed .wed-scod {
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0.625rem;
+  margin: 10px 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 2, 16, 0.1254901961);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-blend-mode: multiply;
+}
+.wed .wed-scod.wed-scod1 {
+  background-image: url("../../access/img/wed1.svg");
+}
+.wed .wed-scod.wed-scod2 {
+  background-image: url("../../access/img/wed2.svg");
+}
+.wed .wed-scod.wed-scod3 {
+  background-image: url("../../access/img/wed3.svg");
+}
+.wed .wed-scod.wed-scod4 {
+  background-image: url("../../access/img/wed4.svg");
+}
+.wed .wed-scod.wed-scod5 {
+  background-image: url("../../access/img/wed5.svg");
+}
+.wed .wed-scod.wed-scod6 {
+  background-image: url("../../access/img/wed6.svg");
+}
+.wed .wed-scod-txt {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5450980392);
+}
+
+.cad {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+.cad .wed-cod {
+  background-image: url("../../access/img/wedcod.svg");
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0.625rem;
+  margin: 10px 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-blend-mode: multiply;
+  margin: 5px 10px;
+}
+.cad .wed-cod-txt {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5450980392);
+}
+
+.titl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 2rem;
+}
+
+.fid .fi {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0px;
+}
+.fid .fi .fi-d {
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 200px;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-blend-mode: multiply;
+  margin: 5px 10px;
+}
+.fid .fi .fi-d-txt {
+  color: #000000;
+}
+.fid .fi .fi-d.fi1 {
+  background-image: url("../../access/img/fi1.svg");
+}
+.fid .fi .fi-d.fi2 {
+  background-image: url("../../access/img/fi2.svg");
+}
+.fid .fi .fi-d.fi3 {
+  background-image: url("../../access/img/fi3.svg");
+}
+.fid .fi .fi-d.fi4 {
+  background-image: url("../../access/img/fi4.svg");
+}
+.fid .fi .fi-d.fi5 {
+  background-image: url("../../access/img/fi5.svg");
+}
+
+.nes .ne {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0px;
+}
+.nes .ne .ne-d {
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 200px;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-blend-mode: multiply;
+  margin: 5px 10px;
+}
+.nes .ne .ne-d.ne1 {
+  background-image: url("../../access/img/ne1.svg");
+}
+.nes .ne .ne-d.ne2 {
+  background-image: url("../../access/img/ne2.svg");
+}
+.nes .ne .ne-d.ne3 {
+  background-image: url("../../access/img/ne3.svg");
+}
+.nes .ne .ne-d-txt {
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */
