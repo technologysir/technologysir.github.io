@@ -108,14 +108,14 @@ nav a, .nav a {
 }
 .pt .box {
   position: relative;
-  flex: 65% 0 0;
+  flex: 90% 0 0;
   max-width: 680px;
   border-radius: 0.9375rem;
   background-color: white;
 }
-@media only screen and (max-width: 1194px) {
+@media only screen and (max-width: 697px) {
   .pt .box {
-    max-width: 230px;
+    width: 100%;
   }
 }
 
@@ -126,7 +126,7 @@ h1 {
   margin: 30px;
   font-size: 8rem;
 }
-@media only screen and (max-width: 1194px) {
+@media only screen and (max-width: 697px) {
   h1 {
     font-size: 4rem;
   }
@@ -138,11 +138,6 @@ h1 {
   align-items: center;
   border-radius: 0.9375rem;
 }
-@media only screen and (max-width: 1194px) {
-  .hov .colm {
-    display: grid;
-  }
-}
 .hov .colm img {
   border-radius: 0.9375rem;
   background-color: black;
@@ -153,6 +148,7 @@ h1 {
 }
 .hov .colm .imgtxt {
   color: #000;
+  margin: 10px;
 }
 .hov :hover {
   background-color: rgba(0, 0, 0, 0.1254901961);
@@ -185,8 +181,8 @@ h3 {
 
 .img {
   border-radius: 0.9375rem;
-  width: 670px;
-  height: 360px;
+  width: 90%;
+  height: auto;
   margin: 2px 5px;
 }
 

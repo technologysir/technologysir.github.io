@@ -20,6 +20,7 @@
 @media only screen and (max-width: 1194px) {
   .parts-l {
     display: none;
+    flex: 0% 0 0;
   }
 }
 .parts-m {
@@ -32,6 +33,7 @@
   .parts-m {
     justify-content: center;
     width: 100%;
+    flex: 100% 0 0;
   }
 }
 .parts-r {
@@ -44,6 +46,7 @@
 @media only screen and (max-width: 1194px) {
   .parts-r {
     display: none;
+    flex: 0% 0 0;
   }
 }
 
@@ -124,7 +127,7 @@ nav .inputbox input, .nav .inputbox input {
   font-size: 0.9375rem;
   gap: 10px;
 }
-nav technonewslogo, .nav technonewslogo {
+nav .technonewslogo, .nav .technonewslogo {
   justify-content: space-around;
   align-items: center;
 }
@@ -209,35 +212,32 @@ a {
 
 .wed-home {
   background-image: url("../../access/img/wedhome.svg");
-  position: relative;
-  width: 41.25rem;
-  height: 22.5rem;
-  flex: 90% 0 0;
+  width: 90%;
+  height: 330px;
+  min-height: 6.25rem;
+  max-height: 25.125rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
-  border-radius: 0.625rem;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1882352941);
-  background-color: rgba(0, 0, 0, 0.5019607843);
-  background-blend-mode: multiply;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
   gap: 10px;
   padding: 0.625rem;
-}
-@media only screen and (max-width: 1194px) {
-  .wed-home {
-    width: 242.8571428571px;
-    height: 170px;
-  }
+  margin: 10px 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 2, 16, 0.1254901961);
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: multiply;
 }
 .wed-home-txt {
-  color: #fff;
-  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
   font-weight: 500;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5450980392);
+}
+@media only screen and (max-width: 697px) {
+  .wed-home {
+    min-height: 3.125rem;
+    max-width: 25.125rem;
+  }
 }
 
 .wed {
@@ -246,7 +246,7 @@ a {
   align-items: center;
   gap: 10px;
 }
-@media only screen and (max-width: 1194px) {
+@media only screen and (max-width: 697px) {
   .wed {
     display: grid;
     justify-content: center;
@@ -285,6 +285,12 @@ a {
 }
 .wed .wed-scod.wed-scod6 {
   background-image: url("../../access/img/wed6.svg");
+}
+@media only screen and (max-width: 697px) {
+  .wed .wed-scod {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
 }
 .wed .wed-scod-txt {
   color: #fff;

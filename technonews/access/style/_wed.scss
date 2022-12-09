@@ -1,60 +1,42 @@
-$er : 680px ;
-$rt : $er/2.8 ;
-$gt : $rt*0.7;
-//.sdr{
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    gap: 10px;
-//    width: rem(660);
-//    height: rem(360);
-//    @media only screen and (max-width:1194px) {
-//        justify-content: center;
-//        width: 100%;
-//        height: 100%;
-//         }
+
 .wed-home {
         background-image: url('../../access/img/wedhome.svg');
-        position: relative;
-        width: rem(660);
-        height: rem(360);
-        flex: 90% 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 10px ;
-    border-radius: rem(10);
-    box-shadow: 0 2px 2px #00000030;
-    background-color: #00000080;
-    background-blend-mode: multiply;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 10px;
-    padding: rem(10);
-    @media only screen and (max-width:1194px) {
-        width: $rt;
-        height: $gt;
-        
+        width: 90%;
+        height: 330px;
+        min-height: rem(100);
+        max-height: rem(402);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 10px;
+        padding: rem(10);
+        margin: 10px 0;
+        border-radius: rem(10) ;
+        box-shadow: 0 2px 2px #00021020;
+        background-color: #ffffff00;
+        background-blend-mode: multiply;
+        &-txt{
+            color: rgb(255, 255, 255);
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 1px #0000008b;
         }
-    &-txt{
-        color: #fff;
-        font-size: 1rem;
-        font-weight: 500;
-        text-shadow: 1px 1px 1px #0000008b;
-    }
+        @media only screen and (max-width:$ta2) {
+        min-height: rem(50);
+        max-width: rem(402);
+                 }
 }
-//}
+
 .wed{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    @media only screen and (max-width:1194px) {
+    @media only screen and (max-width:$ta2) {
     display: grid;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
          }
     
        
@@ -80,7 +62,10 @@ $gt : $rt*0.7;
             &.wed-scod4 {background-image: url('../../access/img/wed4.svg');}
             &.wed-scod5 {background-image: url('../../access/img/wed5.svg');}
             &.wed-scod6 {background-image: url('../../access/img/wed6.svg');}
-            
+            @media only screen and (max-width:$ta2) {
+            height: rem(200);
+            width: rem(200);
+                         }
         
        
 

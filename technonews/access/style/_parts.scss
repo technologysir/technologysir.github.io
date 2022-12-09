@@ -30,6 +30,7 @@
     @media only screen and (max-width:1194px) {
         justify-content: center;
         width: 100%;
+        flex: 100% 0 0;
         }
     }
     &-r{
@@ -41,6 +42,7 @@
 
     @media only screen and (max-width:1194px) {
         display: none;
+        flex: 0% 0 0;
       }
     }
 
