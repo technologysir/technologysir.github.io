@@ -15,7 +15,8 @@
     border-radius: 15px;
     max-height: 210px;
     @media only screen and (max-width:1194px) {
-        display: none;
+      display: none;
+      flex: 0% 0 0;
       }
 
 
