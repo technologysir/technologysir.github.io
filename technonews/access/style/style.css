@@ -406,4 +406,60 @@ a {
 }
 .nes .ne .ne-d-txt {
   color: #000000;
+}
+
+.und {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6901960784);
+}
+
+.img3 {
+  width: 10;
+  height: 5S;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links .colon {
+  flex: 33% 0 0;
+  width: 100%;
+}
+.links .colon .linktext {
+  color: white;
+}
+
+.txtab {
+  background-color: white;
+  width: 100%;
+}
+.txtab .h1 {
+  margin: 10px;
+}
+.txtab .p {
+  font-size: medium;
+}
+
+.app {
+  background-color: white;
+}
+
+.btu {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.imd {
+  width: 10%;
+  height: 10%;
 }/*# sourceMappingURL=style.css.map */

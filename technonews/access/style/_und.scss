@@ -1,0 +1,27 @@
+.und{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    box-shadow: 0 30px 80px #000000b0;
+    }
+.img3{
+    width: 10;
+    height: 5S;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .colon{
+        flex: 33% 0 0;
+        width: 100%;
+        .linktext{
+            color: white;
+        }
+    }
+    
+}
