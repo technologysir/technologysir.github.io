@@ -1,0 +1,23 @@
+.ghj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px #000000b0;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100000;
+    background-color: white;
+    .ghf{
+        height: 50px;
+        width: 300px;
+    }
+    .doad{
+        height: 50px;
+        border: 0px;
+        width: 90%;
+        margin: 10px;
+        background-color: orange;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,24 @@
+.und{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    box-shadow: 0 30px 80px #000000b0;
+    margin-top: 80px;
+    }
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .colon{
+        flex: 50% 0 0;
+        width: 100%;
+        .linktext{
+            color: white;
+        }
+    }
+    
+}

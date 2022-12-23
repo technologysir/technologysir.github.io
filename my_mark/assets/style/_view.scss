@@ -1,0 +1,22 @@
+.view{
+    display: grid;
+.pag{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px #000000b0;
+    .root{
+        margin: 20px;
+        .iminf{
+            box-shadow: 0 3px 10px #000000b0;
+            width: 60%;
+            height: 60%;
+            border-radius: 10px;
+        }
+        direction: rtl;
+    }
+}
+}

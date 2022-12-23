@@ -1,0 +1,89 @@
+.view {
+  display: grid;
+}
+.view .pag {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6901960784);
+}
+.view .pag .root {
+  margin: 20px;
+  direction: rtl;
+}
+.view .pag .root .iminf {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6901960784);
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.und {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6901960784);
+  margin-top: 80px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links .colon {
+  flex: 50% 0 0;
+  width: 100%;
+}
+.links .colon .linktext {
+  color: white;
+}
+
+.ghj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6901960784);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 100000;
+  background-color: white;
+}
+.ghj .ghf {
+  height: 50px;
+  width: 300px;
+}
+.ghj .doad {
+  height: 50px;
+  border: 0px;
+  width: 90%;
+  margin: 10px;
+  background-color: orange;
+  border-radius: 15px;
+}
+
+body {
+  position: relative;
+}
+body::before {
+  content: "";
+  display: block;
+  height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=globle.css.map */
