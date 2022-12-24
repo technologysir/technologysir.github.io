@@ -8,6 +8,11 @@
     position: fixed;
     z-index: 100000;
     background-color: white;
+    @media only screen and (max-width:444px) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+                 }
     .ghf{
         height: 50px;
         width: 300px;

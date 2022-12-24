@@ -56,6 +56,13 @@
   z-index: 100000;
   background-color: white;
 }
+@media only screen and (max-width: 444px) {
+  .ghj {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .ghj .ghf {
   height: 50px;
   width: 300px;
@@ -71,6 +78,8 @@
 
 body {
   position: relative;
+  background-color: #d4d4d4;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 body::before {
   content: "";
@@ -86,4 +95,11 @@ body::before {
 
 a {
   text-decoration: none;
+}
+
+.txtab {
+  background-color: orange;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6901960784);
 }/*# sourceMappingURL=globle.css.map */
