@@ -1,4 +1,49 @@
-.coph{
+.vdt{
     display: flex;
-    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    .vidi{
+        margin: 20px;
+        width: 90%;
+        box-shadow: 0 3px 8px #00ffff8c;
+    }
+    .vid{
+        background-color: white;
+        text-align: center;
+        margin: 20px;
+        box-shadow: 0 1px 4px #000000b2;
+        border-radius: 15px;
+    }
+    .vdc{
+        background-color: white;
+        direction: rtl;
+        height: 70%;
+        margin: 20px;
+        box-shadow: 0 1px 4px #000000b2;
+        border-radius: 15px;
+    }
+    .coph{
+        flex: 0 0 50%;
+    }
+    .ov{
+        display: flex;
+        direction: rtl;
+        margin: 20px;
+    }
+    .ovt{
+        margin: 20px;
+        margin-top: 30px;
+    }
+    .ovi{
+        width: 200px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    .otvid{
+        background-color: white;
+        height: 200vh;
+        margin: 20px;
+        box-shadow: 0 1px 4px #000000b2;
+        border-radius: 15px;
+    }
 }
