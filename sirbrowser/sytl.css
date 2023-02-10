@@ -1,0 +1,137 @@
+body {
+  background-color: black;
+  color: white;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  background-color: #2b2b2b;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 8px rgba(43, 43, 43, 0.7490196078);
+}
+#nav .h {
+  height: 100%;
+}
+#nav .h:hover {
+  background-color: #444444;
+}
+#nav .act {
+  background-color: aqua;
+  height: 100%;
+}
+#nav .act:hover {
+  background-color: #444444;
+}
+#nav a {
+  text-decoration: none;
+  color: white;
+}
+#nav li {
+  list-style: none;
+  margin: 10px;
+}
+
+#hero {
+  width: 90%;
+}
+
+#file {
+  width: 100%;
+  text-align: center;
+}
+#file #btn {
+  color: aqua;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0);
+  height: 50px;
+  border: 3px solid aqua;
+  border-radius: 10px;
+  font: 1em sans-serif;
+}
+#file #btn:hover {
+  background-color: aqua;
+  border: rgba(255, 255, 255, 0);
+  color: #000;
+}
+
+#slider {
+  width: 50%;
+  text-align: center;
+  margin: 100px;
+}
+#slider .tx {
+  font-size: 5em;
+}
+#slider .ti {
+  display: flex;
+  width: 100%;
+}
+#slider .its {
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 10px 80px rgba(0, 255, 255, 0.5568627451);
+}
+
+#view {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#view .vb {
+  background-color: #2b2b2b;
+  display: flex;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 5px 8px rgba(43, 43, 43, 0.7254901961);
+}
+#view #vt {
+  margin: 50px;
+}
+#view #vi {
+  width: 200px;
+  margin: 20px;
+  margin-left: 300px;
+}
+
+#io {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-top: 20px;
+  text-shadow: 0 3px 8px rgba(255, 255, 255, 0.7098039216);
+}
+#io h1 {
+  font-size: 4em;
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font: 2em audiowide;
+}
+footer .ftx {
+  margin-bottom: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .sir {
+  text-shadow: 0 3px 8px rgba(255, 255, 255, 0.7098039216);
+}
+footer .sir:hover {
+  text-shadow: 0 20px 20px rgba(255, 255, 255, 0.7254901961);
+}/*# sourceMappingURL=sytl.css.map */
