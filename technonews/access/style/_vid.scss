@@ -29,6 +29,10 @@
         display: flex;
         direction: rtl;
         margin: 20px;
+        border-radius: 15px;
+    }
+    .ov:hover{
+        background-color: #cccccc;
     }
     .ovt{
         margin: 20px;

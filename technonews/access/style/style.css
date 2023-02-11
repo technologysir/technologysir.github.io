@@ -491,6 +491,10 @@ a {
   display: flex;
   direction: rtl;
   margin: 20px;
+  border-radius: 15px;
+}
+.vdt .ov:hover {
+  background-color: #cccccc;
 }
 .vdt .ovt {
   margin: 20px;
