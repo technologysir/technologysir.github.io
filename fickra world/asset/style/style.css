@@ -25,13 +25,21 @@ body::before, *::before {
   width: 100%;
   top: 0;
 }
+@media screen and (max-width: 660px) {
+  .nav {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .nav .logo {
   height: 50px;
   margin: 10px;
   margin-left: 5%;
+  right: 0;
 }
 .nav li {
   background-color: #fff;
+  padding: 5px;
   text-align: center;
   justify-items: center;
   list-style: none;
@@ -39,6 +47,11 @@ body::before, *::before {
   height: auto;
   margin: 10px;
   border-radius: 50px;
+}
+@media screen and (max-width: 660px) {
+  .nav li {
+    display: none;
+  }
 }
 .nav li .int {
   width: 130px;
@@ -117,8 +130,15 @@ li:hover .item-img {
 
 .sers {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   text-align: center;
+}
+@media screen and (max-width: 660px) {
+  .sers {
+    display: grid;
+  }
 }
 .sers .ser {
   background-color: #fff;
@@ -126,6 +146,11 @@ li:hover .item-img {
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6980392157);
+}
+@media screen and (max-width: 660px) {
+  .sers .ser {
+    width: 90%;
+  }
 }
 .sers .ser .sei {
   background-color: #fff;
@@ -167,16 +192,14 @@ footer h1 {
   text-align: center;
   list-style: none;
 }
-.sidenav .item-img {
-  width: 40px;
-  margin-left: 6px;
-  background-color: #ce0067;
+.sidenav a:hover {
+  background-color: rgba(206, 0, 103, 0.7058823529);
 }
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #000;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
   background-color: rgba(206, 0, 103, 0);
@@ -186,7 +209,7 @@ footer h1 {
 }
 .sidenav .item-v {
   background-color: rgba(255, 255, 255, 0);
-  color: #000;
+  color: #ffffff;
 }
 @media screen and (max-height: 450px) {
   .sidenav .sidenav {
@@ -204,10 +227,27 @@ footer h1 {
   font-size: 36px;
   margin-left: 50px;
   margin-top: 100px;
-  color: #000;
-  background-color: #ffffff;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
+}
+
+.mm {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #fff;
+}
+@media screen and (max-width: 660px) {
+  .mm {
+    display: block;
+  }
+}
+
+.fv {
+  margin: 20px;
+  background-color: #fff;
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */

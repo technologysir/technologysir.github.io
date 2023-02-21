@@ -23,13 +23,19 @@ margin-top: auto;
     z-index: 10000;
     width: 100%;
     top: 0;
+    @media screen and (max-width:660px) {
+       justify-content: space-around;
+       align-items: center;
+    }
     .logo{
         height: 50px;
         margin: 10px;
         margin-left: 5%;
+        right: 0;
     }
     li{
         background-color: #fff;
+        padding: 5px;
         text-align:center;
         justify-items: center;
         list-style: none;
@@ -37,6 +43,9 @@ margin-top: auto;
         height: auto;
         margin: 10px;
         border-radius: 50px;
+        @media screen and (max-width:660px) {
+            display: none;
+        }
        .int{
            width: 130px;
            height: 100%;
@@ -113,8 +122,13 @@ li:hover{
 }
 .sers{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     text-align: center;
+    @media screen and (max-width:660px) {
+        display: grid;
+    }
    // margin: 100px;
     .ser{
     background-color: #fff;
@@ -122,6 +136,9 @@ li:hover{
     margin: 20px;
     border-radius: 15px;
     box-shadow: 0 3px 8px #000000b2;
+    @media screen and (max-width:660px) {
+        width: 90%;
+    }
     .sei{
         background-color: #fff;
         width: 60%;
@@ -163,16 +180,14 @@ footer{
     color: #000000;
     text-align:center;
     list-style: none;
-    .item-img{
-        width: 40px;
-        margin-left: 6px;
-        background-color: #ce0067;
+    a:hover {
+        background-color: #ce0067b4;
     }
     a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #000;
+        color: #ffffff;
         display: block;
         transition: 0.3s;
         background-color: #ce006700;
@@ -184,7 +199,7 @@ footer{
       }
       .item-v{
         background-color: #ffffff00;
-        color: #000;
+        color: #ffffff;
       }
       
       
@@ -201,10 +216,25 @@ footer{
         font-size: 36px;
         margin-left: 50px;
         margin-top: 100px;
-        color: #000;
-        background-color: #ffffff;
-      }
+        color: #fff;
+          }
 
 a{
     text-decoration: none;
 }
+ .mm{
+    display: none;
+    font-size:30px;
+    cursor:pointer; 
+    background-color: #fff;
+    @media screen and (max-width:660px) {
+        display: block;
+    }
+ }
+
+
+ .fv{
+     margin: 20px;
+     background-color: #fff;
+     width: 90%;
+ }
