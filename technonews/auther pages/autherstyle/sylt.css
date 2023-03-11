@@ -191,5 +191,31 @@ h3 {
 }
 
 .list-v {
+  display: flex;
+}
+@media screen and (max-width: 536px) {
+  .list-v {
+    display: grid;
+  }
+}
+.list-v .op {
+  margin: 25px;
+  background-color: #fdfdfd;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.list-v .op:hover {
+  background-color: #b9b9b9;
+}
+.list-v .hj {
+  width: 100px;
+  height: 100px;
+}
+
+.vbox {
   background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7490196078);
 }/*# sourceMappingURL=sylt.css.map */

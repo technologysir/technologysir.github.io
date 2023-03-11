@@ -1,4 +1,28 @@
 .list-v{
-    background-color: #fff;
+
     display: flex;
+    @media screen and (max-width:536px) {
+        display: grid;
+        
+    }
+    .op{
+        margin: 25px;
+        background-color: #fdfdfd;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .op:hover{
+        background-color: #b9b9b9;
+    }
+    .hj{
+        width: 100px;
+        height: 100px;
+    }
+}
+.vbox{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 1px 8px #000000bf;
 }

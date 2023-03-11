@@ -10,6 +10,11 @@
 }
 .app{
     background-color: white;
+    display: flex;
+    padding: 20px;
+    @media screen and (max-width:1190px) {
+        display: grid;
+    }
 }
 .btu{
     background-color: white;
@@ -19,6 +24,9 @@
     border-radius: 15px;
 }
 .imd{
-    width: 10%;
-    height: 10%;
+    width: 100px;
+    height: 100px;
+}
+.ft{
+    flex: 0 0 30%;
 }
