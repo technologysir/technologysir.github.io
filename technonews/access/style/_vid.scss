@@ -16,6 +16,7 @@
     }
     .vdc{
         background-color: white;
+        padding: 10px;
         direction: rtl;
         height: 70%;
         margin: 20px;
@@ -24,6 +25,7 @@
     }
     .coph{
         flex: 0 0 50%;
+        padding: 15px;
     }
     .ov{
         display: flex;
@@ -49,5 +51,6 @@
         margin: 20px;
         box-shadow: 0 1px 4px #000000b2;
         border-radius: 15px;
+        padding: 10px;
     }
 }

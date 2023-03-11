@@ -478,6 +478,7 @@ a {
 }
 .vdt .vdc {
   background-color: white;
+  padding: 10px;
   direction: rtl;
   height: 70%;
   margin: 20px;
@@ -486,6 +487,7 @@ a {
 }
 .vdt .coph {
   flex: 0 0 50%;
+  padding: 15px;
 }
 .vdt .ov {
   display: flex;
@@ -511,4 +513,5 @@ a {
   margin: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6980392157);
   border-radius: 15px;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
