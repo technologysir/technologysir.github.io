@@ -37,8 +37,9 @@ body::before, *::before {
   margin-left: 5%;
   right: 0;
 }
-.nav li {
+.nav .item {
   background-color: #fff;
+  color: #000;
   padding: 5px;
   text-align: center;
   justify-items: center;
@@ -49,27 +50,27 @@ body::before, *::before {
   border-radius: 50px;
 }
 @media screen and (max-width: 660px) {
-  .nav li {
+  .nav .item {
     display: none;
   }
 }
-.nav li .int {
+.nav .item .int {
   width: 130px;
   height: 100%;
   border-radius: 50px;
   border: 1px solid;
 }
-.nav li .item-img {
+.nav .item .item-img {
   background-color: #fff;
   width: 40px;
   margin-left: 6px;
 }
 
-li:hover {
+.item:hover {
   background-color: #0b5394;
   color: #fff;
 }
-li:hover .item-img {
+.item:hover .item-img {
   background-color: #0b5394;
   color: #fff;
 }
@@ -250,4 +251,8 @@ a {
   margin: 20px;
   background-color: #fff;
   width: 90%;
+}
+
+#loginbox {
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
