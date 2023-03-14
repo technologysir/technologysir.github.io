@@ -1,0 +1,39 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    .logo{
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            list-style: none;
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+                padding: 10px 17px;
+                color: #000;
+                border-radius: 20px;
+            }
+            .active, a:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            
+        }
+    }
+} 
