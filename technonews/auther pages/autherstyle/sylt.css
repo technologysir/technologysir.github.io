@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #565656;
   font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 body::before {
@@ -16,7 +16,7 @@ body::before {
 
 nav, .nav {
   position: relative;
-  background-color: white;
+  background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +31,7 @@ nav, .nav {
   nav, .nav {
     display: grid;
     justify-content: center;
+    width: 100%;
   }
 }
 nav-l, .nav-l {
@@ -62,7 +63,7 @@ nav .inputbox input, .nav .inputbox input {
   height: 2.5rem;
   border-radius: 1.25rem;
   padding: 1.25rem;
-  background-color: #fafafa;
+  background-color: #353535;
   width: inherit;
   font-size: 0.9375rem;
   gap: 10px;
@@ -81,10 +82,6 @@ nav .ti .active, .nav .ti .active {
   color: white;
   background-color: #197ef9;
 }
-nav .ti :hover, .nav .ti :hover {
-  background-color: #f9f9f9;
-  color: #000;
-}
 nav .ti-si, .nav .ti-si {
   background-color: #e4e4e4;
   display: flex;
@@ -93,11 +90,22 @@ nav .ti-si, .nav .ti-si {
   font-size: 25px;
   width: 2.5rem;
   height: 2.5rem;
+  transition: 0.5s;
   border-radius: 50%;
-}
-nav a, .nav a {
   color: #000;
-  text-decoration: none;
+}
+nav .ti-si h6, .nav .ti-si h6 {
+  display: none;
+}
+
+.ti-si:hover {
+  background-color: #f9f9f9;
+  color: #000;
+  border-radius: 15px;
+  width: 4.375rem;
+}
+.ti-si:hover h6 {
+  display: block;
 }
 
 .pt {
@@ -111,7 +119,8 @@ nav a, .nav a {
   flex: 90% 0 0;
   max-width: 680px;
   border-radius: 0.9375rem;
-  background-color: white;
+  color: #fff;
+  background-color: #000;
 }
 @media only screen and (max-width: 697px) {
   .pt .box {
@@ -137,6 +146,7 @@ h1 {
   justify-content: right;
   align-items: center;
   border-radius: 0.9375rem;
+  transition: 0.5s;
 }
 .hov .colm img {
   border-radius: 0.9375rem;
@@ -147,11 +157,14 @@ h1 {
   height: 100px;
 }
 .hov .colm .imgtxt {
-  color: #000;
+  color: #fff;
   margin: 10px;
 }
 .hov :hover {
-  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-color: #fff;
+}
+.hov :hover .imgtxt {
+  color: #000;
 }
 
 a {
@@ -200,13 +213,16 @@ h3 {
 }
 .list-v .op {
   margin: 25px;
-  background-color: #fdfdfd;
+  background-color: #0d0d0d;
+  color: #fff;
   padding: 10px;
   border-radius: 10px;
+  transition: 0.5s;
   text-align: center;
 }
 .list-v .op:hover {
-  background-color: #b9b9b9;
+  background-color: #fff;
+  color: #000;
 }
 .list-v .hj {
   width: 100px;
@@ -214,7 +230,8 @@ h3 {
 }
 
 .vbox {
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7490196078);

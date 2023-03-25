@@ -1,6 +1,7 @@
 nav, .nav {
     position: relative;
-    background-color: white;
+    //background-color: white;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +43,7 @@ nav, .nav {
             height: rem(40);
             border-radius: rem(20);
             padding: rem(20);
-            background-color: #fafafa;
+            background-color: #353535;
             width: inherit;
             font-size: rem(15);
             gap:10px;
@@ -51,7 +52,6 @@ nav, .nav {
 .technonewslogo{
     justify-content: space-around;
     align-items: center;
-    
     
 }
 .ti{
@@ -63,11 +63,6 @@ nav, .nav {
         color: white;
         background-color: $aic;
     }
-    :hover{
-        background-color: #f9f9f9;
-        color: #000;
-        
-    }
     &-si{
         background-color: $ibc;
         display: flex;
@@ -76,10 +71,21 @@ nav, .nav {
         font-size: 25px;
         width: rem(40);
         height: rem(40);
+        transition: 0.5s;
         border-radius: 50%;
-        
-        
+        color: #000;
+        h6{
+            display: none;
+        }
+        }
+}
+}
+.ti-si:hover{
+    background-color: #f9f9f9;
+    color: #000;
+    border-radius:15px;
+    width: rem(70);
+    h6{
+        display: block;
     }
-    
-}
-}
+    }

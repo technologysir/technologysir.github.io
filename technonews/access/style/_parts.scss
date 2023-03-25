@@ -25,7 +25,10 @@
     }
     &-m{
     flex: 65% 0 0;
-    background-color: #ffffff;
+    //background-color: #ffffff;
+    background-color: #000000;
+    box-shadow: 0 3px 8px #000000;
+    padding: 10px;
     max-width: 680px;
     border-radius: 15px;
     @media only screen and (max-width:1194px) {
@@ -36,10 +39,8 @@
     }
     &-r{
     flex: 25% 0 0;
-    background-color: #ffffff;
     max-width: 360px;
-    border-radius: 15px;
-    max-height: 360px;
+    max-height: 400px;
 
     @media only screen and (max-width:1194px) {
         display: none;

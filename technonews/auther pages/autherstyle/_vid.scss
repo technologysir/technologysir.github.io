@@ -7,13 +7,16 @@
     }
     .op{
         margin: 25px;
-        background-color: #fdfdfd;
+        background-color: #0d0d0d;
+        color: #fff;
         padding: 10px;
         border-radius: 10px;
+        transition: 0.5s;
         text-align: center;
     }
     .op:hover{
-        background-color: #b9b9b9;
+        background-color: #fff;
+        color: #000;
     }
     .hj{
         width: 100px;
@@ -21,7 +24,8 @@
     }
 }
 .vbox{
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 1px 8px #000000bf;

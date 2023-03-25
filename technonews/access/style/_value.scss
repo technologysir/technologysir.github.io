@@ -8,8 +8,8 @@
 }
 
 $font:Segoe UI Historic,Segoe UI,Helvetica,Arial,sans-serif;
-$BG:#f0f0f0;
-//$BG:#565656;
+//$BG:#f0f0f0;
+$BG:#565656;
 $ic:#656565;
 $ibc:#e4e4e4;
 $aic:#197ef9;
@@ -21,6 +21,7 @@ $ta2:697px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     position: relative;
@@ -36,3 +37,4 @@ body{
              }
     }
 }
+

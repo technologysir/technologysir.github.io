@@ -11,10 +11,13 @@
         gap: 10px;
         padding: rem(10);
         margin: 10px 0;
+        transition: 0.5s;
         border-radius: rem(10) ;
-        box-shadow: 0 2px 2px #00021020;
-        background-color: #ffffff00;
+        //box-shadow: 0 2px 2px #00021020;
+        box-shadow: 0 3px 8px #ffffff;
+        background-color: #00000080;
         background-blend-mode: multiply;
+        border: 1px solid #fff;
         &-txt{
             color: rgb(255, 255, 255);
             font-size: 0.8rem;
@@ -32,6 +35,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 20px;
     @media only screen and (max-width:$ta2) {
     display: grid;
     justify-content: center;
@@ -53,8 +57,10 @@
         padding: rem(10);
         margin: 10px 0;
         border-radius: rem(10) ;
-        box-shadow: 0 2px 2px #00021020;
+        //box-shadow: 0 2px 2px #00021020;
+        box-shadow: 0 3px 8px #ffffff;
         background-color: #00000080;
+        transition: 0.5s;
         background-blend-mode: multiply;
             &.wed-scod1 {background-image: url('../../access/img/wed1.svg');}
             &.wed-scod2 {background-image: url('../../access/img/wed2.svg');}
@@ -102,7 +108,7 @@
             color: #ffffff;
             font-size: 1rem;
             font-weight: 500;
-            text-shadow: 1px 1px 1px #0000008b;
+           // text-shadow: 1px 1px 1px #0000008b;
         }
     }
 }
@@ -111,6 +117,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    color: #fff;
     font-size: 2rem
 }
 .fid{
@@ -119,6 +126,9 @@
         justify-content: right;
         align-items: center;
         gap: 0px;
+        border-radius: rem(10);
+        margin: 10px;
+        transition: 0.5s;
         .fi-d {
             width: rem(100);
             height: rem(100);
@@ -132,11 +142,11 @@
            background-color: #00000080;
            background-blend-mode: multiply;
            margin: 5px 10px;
-        
+           
            
             
             &-txt{
-                color: #000000;
+                color: #fff;
                 
             }
             &.fi1 {background-image: url('../../access/img/fi1.svg');}
@@ -156,6 +166,8 @@
         justify-content: right;
         align-items: center;
         gap: 0px;
+        border-radius: rem(10);
+        transition: 0.5s;
         .ne-d{
             width: rem(100);
             height: rem(100);
@@ -166,10 +178,10 @@
             padding: rem(10);
             border-radius: rem(10);
             box-shadow: 0 2px 2px #00000020;
-           background-color: #00000080;
-           background-blend-mode: multiply;
-           margin: 5px 10px;
-        
+            background-color: #00000080;
+            background-blend-mode: multiply;
+            margin: 5px 10px;
+         
            &.ne1 {background-image: url('../../access/img/ne1.svg');}
            &.ne2 {background-image: url('../../access/img/ne2.svg');}
            &.ne3 {background-image: url('../../access/img/ne3.svg');}
@@ -183,5 +195,29 @@
     
         
        
+    }
+}
+
+
+
+.wed-scod:hover{
+    width: rem(120);
+    height: rem(120);
+}
+.wed-home:hover{
+    width: 99%;
+    height: 350px;
+}
+.fi:hover{
+    background-color: #ffffff;
+
+    .fi-d-txt{
+    color: #000000;        
+    }
+}
+.ne:hover{
+    background-color: #ffffff;
+    .ne-txt{
+        color: #000;
     }
 }

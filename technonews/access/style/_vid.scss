@@ -9,17 +9,18 @@
     .vidi{
         margin: 20px;
         width: 90%;
-        box-shadow: 0 3px 8px #00ffff8c;
+        box-shadow: 0 3px 8px #00ffff;
     }
     .vid{
-        background-color: white;
+        background-color: #000;
         text-align: center;
         margin: 20px;
         box-shadow: 0 1px 4px #000000b2;
         border-radius: 15px;
     }
     .vdc{
-        background-color: white;
+        background-color: #000;
+        color: #fff;
         padding: 10px;
         direction: rtl;
         height: 70%;
@@ -36,9 +37,11 @@
         direction: rtl;
         margin: 20px;
         border-radius: 15px;
+        transition: 0.5s;
     }
     .ov:hover{
-        background-color: #cccccc;
+        background-color: #fff;
+        color: #000;
     }
     .ovt{
         margin: 20px;
@@ -50,7 +53,7 @@
         border-radius: 15px;
     }
     .otvid{
-        background-color: white;
+        background-color: #000;
         height: 200vh;
         margin: 20px;
         box-shadow: 0 1px 4px #000000b2;
