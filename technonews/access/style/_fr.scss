@@ -1,9 +1,14 @@
 .fr{
     position: fixed;
+    z-index: 1000000;
+    margin: 10px;
     background-color: #000000;  
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0 3px 8px #000000;
+    @media only screen and (max-width:1194px) {
+        box-shadow: 0 0px 20000px #fff;
+    }
     //background-color: #ffffff;
 .events {
     &-e {

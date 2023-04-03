@@ -203,6 +203,11 @@
 .wed-scod:hover{
     width: rem(120);
     height: rem(120);
+    @media screen and (max-width:697px) {
+
+    width: rem(220);
+    height: rem(220);
+    }
 }
 .wed-home:hover{
     width: 99%;
