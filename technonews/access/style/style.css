@@ -122,20 +122,20 @@ a {
   text-decoration: none;
 }
 
-.inputbox {
+.inputbox_2 {
   display: none;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
   transition: 0.5s;
 }
-.inputbox label {
+.inputbox_2 label {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.inputbox input {
+.inputbox_2 input {
   border: none;
   height: 2.5rem;
   padding: 1.25rem;
@@ -145,7 +145,7 @@ a {
   font-size: 0.9375rem;
   gap: 10px;
 }
-.inputbox .sebtn {
+.inputbox_2 .sebtn {
   height: 2.5rem;
   border: none;
   width: 40%;
@@ -154,7 +154,7 @@ a {
   background-color: #1f1f1f;
   color: #fff;
 }
-.inputbox .sebtn_1 {
+.inputbox_2 .sebtn_1 {
   height: 2.5rem;
   border: none;
   width: 20%;
