@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.9529411765));
+  color: #ffffff;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+body::before {
+  content: "";
+  display: block;
+  height: 20vh;
+}
+
+nav {
+  z-index: 100000;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: linear-gradient(to right, #000000, #353535);
+}
+nav img {
+  width: 10vh;
+}
+
+.holasir {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 0;
+  height: 160vh;
+  width: 100%;
+}
+.holasir .content1 {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+@media only screen and (max-width: 551px) {
+  .holasir .content1 {
+    padding-left: 50px;
+  }
+}
+.holasir .content1 .txt {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.holasir .content1 .txt h1 {
+  font-size: 3rem;
+  font-family: audiowide;
+  margin: 5px;
+}
+.holasir .content1 .txt p {
+  margin: 10px;
+  font-size: 1rem;
+}
+.holasir .content1 .path {
+  position: absolute;
+  background-color: #000;
+  border-left: 15vw solid #ffffff;
+  border-top: 15vw solid #ffffff;
+  box-shadow: 0 -20px 10px #ffffff;
+  height: 25vw;
+  width: 50vw;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 25vw;
+}
+.holasir .content2 {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+  height: 110vh;
+  padding-top: 240px;
+  padding-left: 50px;
+}
+.holasir .content2 .txt {
+  position: relative;
+  left: 0;
+  color: #000000;
+}
+.holasir .content2 .txt h1 {
+  font-size: 3rem;
+  font-family: audiowide;
+  margin: 5px;
+}
+@media only screen and (max-width: 551px) {
+  .holasir .content2 .txt h1 {
+    font-size: 2rem;
+  }
+}
+.holasir .content2 .txt p {
+  margin: 10px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 551px) {
+  .holasir .content2 .txt p {
+    font-size: 1rem;
+  }
+}
+.holasir .content2 .path {
+  position: absolute;
+  background-color: #fff;
+  border-left: 15vw solid #000000;
+  border-bottom: 15vw solid #000000;
+  box-shadow: 0 20px 10px #000000;
+  height: 25vw;
+  width: 50vw;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 25vw;
+}
+.holasir .content2 .links {
+  display: flex;
+  justify-content: left;
+}
+@media only screen and (max-width: 390px) {
+  .holasir .content2 .links {
+    flex-direction: column;
+    margin-right: 50px;
+  }
+}
+.holasir .content2 .links a {
+  margin: 3px;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 50vh;
+  text-decoration: none;
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  transition: 0.5s;
+  justify-content: space-between;
+}
+.holasir .content2 .links a img {
+  margin: 2px;
+}
+.holasir .content2 .links a:hover {
+  background: #353535;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+  background: #000;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.5vw;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353535;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(53, 53, 53, 0.6980392157);
+}/*# sourceMappingURL=style.css.map */
