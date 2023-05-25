@@ -1,25 +1,51 @@
 .und{
-    background-color: black;
+    background-color: #353535;
+    display: flex;
+    margin: 15px;
+    border-radius: 50vh;
     color: white;
     position: relative;
     top: 0;
+    width: 90%;
+    z-index: 0;
+    box-shadow: 0 0px 10px #353535;
+    @media only screen and (max-width:747px) {
     width: 100%;
-    z-index: 100000;
-    box-shadow: 0 30px 80px #000000b0;
+    margin: 0;
+    z-index: 10000;
     }
-//.img3{
-//SS}
-.links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    }
+.sirpng{
+ width:40px;
+ height:40px;
 
+ border-radius: 100%;
+ margin-right: 10px;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     .cccc4{
+        flex: 75%;
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     margin: 20px;
+     }
+     .cccc1{
+        flex: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     .colon{
-        flex: 33% 0 0;
+        margin: 10px;
         width: 100%;
         .linktext{
             color: white;
+            text-decoration: underline;
         }
     }
-    
+    }
 }

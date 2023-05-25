@@ -9,7 +9,7 @@
 
 $font:Segoe UI Historic,Segoe UI,Helvetica,Arial,sans-serif;
 //$BG:#f0f0f0;
-$BG:#565656;
+$BG:#000000;
 $ic:#656565;
 $ibc:#e4e4e4;
 $aic:#197ef9;
@@ -49,13 +49,13 @@ body{
   
 
   ::-webkit-scrollbar-thumb {
-    background: #197ef9ab;
+    background: #353535;
     border-radius: 25vw;
     transition: 0.5s;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #197ef9;
+    background: #353535;
   }
   .sdfsdfsdf{
     display: none;
@@ -162,7 +162,7 @@ body{
       .clbtner{
         position: fixed;
         bottom: 20px;
-        z-index: 100000000;
+        z-index: 10000000000000;
         width: 100%;
         text-align: center;
         display: flex;

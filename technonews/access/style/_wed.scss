@@ -1,88 +1,152 @@
-
-.wed-home {
-        background-image: url('../../access/img/wedhome.svg');
-        width: 90%;
-        height: 330px;
-        min-height: rem(100);
-        max-height: rem(402);
+.htc{
+height: 90vh;
+padding: 5px;
+display: flex;
+justify-content: center;
+align-items:center;
+direction: rtl;
+@media only screen and (max-width:1017px) {
+    flex-direction: column;
+    height: 260vh;
+    width: 100%;
+         }
+@media only screen and (max-width:669px) {
+    height: 390vh;
+         }
+.wed-home{
+    flex: 60%;
+    height: 100%;
+    @media only screen and (max-width:1017px) {
+        flex: 100%;
+        height: 50%;
+        width: 100%;
+             }
+    @media only screen and (max-width:669px) {
+        height: 15%;
+             }
+    @media only screen and (max-width:343px) {
+        height: 10%;
+             }
+.wed-home-i {
+        height: 90%;
+        background-image: url('../../access/img/wedhome.svg');    
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-end;
         gap: 10px;
         padding: rem(10);
-        margin: 10px 0;
+        //margin: 10px 0;
         transition: 0.5s;
         border-radius: rem(10) ;
         //box-shadow: 0 2px 2px #00021020;
-        box-shadow: 0 3px 8px #ffffff;
-        background-color: #00000080;
+        box-shadow: 0 -3px 8px #ffffff;
+        //background-color: #00000080;
         background-blend-mode: multiply;
         border: 1px solid #fff;
-        &-txt{
-            color: rgb(255, 255, 255);
-            font-size: 0.8rem;
-            font-weight: 500;
-            text-shadow: 1px 1px 1px #0000008b;
+        
         }
-        @media only screen and (max-width:$ta2) {
+        /*@media only screen and (max-width:$ta2) {
         min-height: rem(50);
         max-width: rem(402);
-                 }
+          }*/
+          &-txt{
+            direction: rtl;
+            padding: 2px;
+            height: 10%;
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 1px #0000008b;
 }
-
+}
 .wed{
+    flex: 40%;
+    padding:7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
-    @media only screen and (max-width:$ta2) {
-    display: grid;
-    justify-content: center;
-    width: 100%;
+    margin-right: 20px;
+    @media only screen and (max-width:1017px) {
+        flex: 100%;
+        height: 50%;
+        width: 100%;
+             }
+    @media only screen and (max-width:669px) {
+        flex-direction: column;
+        height: 85%;
+             }
+    @media only screen and (max-width:343px) {
+        flex-direction: column;
+        height: 90%;
+             }
+.vp{
+    flex: 50%;
     height: 100%;
-         }
-    
-       
-
-
-
+    padding: 2px;
+    margin: 2px;
+    //margin-right: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    //gap: 10px;
+    //padding: 20px;
+    @media only screen and (max-width:343px) {
+        height: 25%;
+             }
+    .wed-s{
+        direction: rtl;
+        display: flex;
+        justify-content:center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 50px;
+        height: 50%;
+        width: 100%;
+    .wed-scod-txt{
+        padding: 10px;
+         color: #fff;
+         font-size:0.8rem;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #0000008b;
+     }
     .wed-scod{
-        width: rem(100);
+        width: rem(160);
         height: rem(100);
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        justify-content:center;
+        align-items: center;
         gap: 10px;
         padding: rem(10);
         margin: 10px 0;
         border-radius: rem(10) ;
         //box-shadow: 0 2px 2px #00021020;
-        box-shadow: 0 3px 8px #ffffff;
-        background-color: #00000080;
+        box-shadow: 0 -3px 8px #ffffff;
+        //background-color: #00000080;
         transition: 0.5s;
         background-blend-mode: multiply;
             &.wed-scod1 {background-image: url('../../access/img/wed1.svg');}
             &.wed-scod2 {background-image: url('../../access/img/wed2.svg');}
             &.wed-scod3 {background-image: url('../../access/img/wed3.svg');}
             &.wed-scod4 {background-image: url('../../access/img/wed4.svg');}
-            &.wed-scod5 {background-image: url('../../access/img/wed5.svg');}
-            &.wed-scod6 {background-image: url('../../access/img/wed6.svg');}
-            @media only screen and (max-width:$ta2) {
-            height: rem(200);
-            width: rem(200);
+            &.wed-scod5 {background-image: url('../../access/img/wed5.svg');display: none;}
+            &.wed-scod6 {background-image: url('../../access/img/wed6.svg');display: none;}
+            @media only screen and (max-width:1017px) {
+            height: rem(300);
+            width: rem(320);
                          }
+            @media only screen and (max-width:389px) {
+            height: rem(300);
+            width: 100%;
+                         }
+            
         
-       
+                         
 
-        &-txt{
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 500;
-            text-shadow: 1px 1px 1px #0000008b;
-        }
-    }
+        
+    }}}}
 }
+
 .cad{
     display: flex;
     justify-content: right;
@@ -121,6 +185,15 @@
     font-size: 2rem
 }
 .fid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    @media only screen and (max-width:565px) {
+        flex-direction: column;
+             }
+    .fir{
+        flex: 50%;
     .fi{
         display: flex;
         justify-content: right;
@@ -130,7 +203,7 @@
         margin: 10px;
         transition: 0.5s;
         .fi-d {
-            width: rem(100);
+            width: rem(160);
             height: rem(100);
             display: flex;
             justify-content: space-between;
@@ -158,9 +231,18 @@
         
        
     
-    }
+    }}
 }
 .nes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    @media only screen and (max-width:565px) {
+        flex-direction: column;
+             }
+    .ner{
+        flex: 50%;
     .ne {
         display: flex;
         justify-content: right;
@@ -169,7 +251,7 @@
         border-radius: rem(10);
         transition: 0.5s;
         .ne-d{
-            width: rem(100);
+            width: rem(160);
             height: rem(100);
             display: flex;
             justify-content: space-between;
@@ -183,8 +265,9 @@
             margin: 5px 10px;
          
            &.ne1 {background-image: url('../../access/img/ne1.svg');}
-           &.ne2 {background-image: url('../../access/img/ne2.svg');}
-           &.ne3 {background-image: url('../../access/img/ne3.svg');}
+           &.ne2 {background-image: url('https://www.aljazeera.net/wp-content/uploads/2023/03/8561.jpg');}
+           &.ne3 {background-image: url('../../access/img/ne2.svg');}
+           &.ne4 {background-image: url('../../access/img/ne3.svg');}
             
             &-txt{
                 color: #000000;
@@ -195,23 +278,17 @@
     
         
        
-    }
+    }}
 }
 
 
 
-.wed-scod:hover{
-    width: rem(120);
-    height: rem(120);
-    @media screen and (max-width:697px) {
-
-    width: rem(220);
-    height: rem(220);
-    }
+.wed-s:hover{
+    .wed-scod{background-color: #00000080;}
 }
 .wed-home:hover{
-    width: 99%;
-    height: 350px;
+    .wed-home-i{background-color: #00000080;}
+    
 }
 .fi:hover{
     background-color: #ffffff;

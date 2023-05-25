@@ -1,9 +1,10 @@
 .exe{
   position: fixed;
+  backdrop-filter: blur(5px);
   //background-color: #fff;
-  background-color: #000000;
-  box-shadow: 0 3px 8px #000000;
-  color: #fff;
+  background-color: #ffffffb4;
+  box-shadow: 0 3px 8px #ffffffb4;
+  color: #000;
   transition: 0.5s;
   padding: 10px;
   width: 12vw;
