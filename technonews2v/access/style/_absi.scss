@@ -1,0 +1,35 @@
+.txtab{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    .h1{
+        margin: 10px;
+    }
+    .p{
+    font-size: medium;
+    }
+}
+.app{
+    background-color: #000;
+    display: flex;
+    padding: 20px;
+    color: #fff;
+    @media screen and (max-width:1190px) {
+        display: grid;
+    }
+}
+.btu{
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.imd{
+    width: 100px;
+    height: 100px;
+}
+.ft{
+    flex: 0 0 30%;
+}

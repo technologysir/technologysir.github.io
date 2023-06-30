@@ -1,0 +1,48 @@
+nav, .nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.0431372549);
+}
+nav-l, .nav-l {
+  flex: 25% 0 0;
+  max-width: 360px;
+}
+nav-m, .nav-m {
+  flex: 50% 0 0;
+  max-width: 680px;
+}
+nav-r, .nav-r {
+  background-color: beige;
+  flex: 25% 0 0;
+  max-width: 360px;
+}
+nav .inputbox, .nav .inputbox {
+  justify-content: space-around;
+  align-items: center;
+}
+nav .inputbox label, .nav .inputbox label {
+  width: 100%;
+}
+nav .inputbox input, .nav .inputbox input {
+  border: none;
+  height: rem(40);
+  border-radius: rem(20);
+  padding: rem(20);
+  background-color: #fafafa;
+  width: inherit;
+  font-size: rem(15);
+  gap: 10px;
+}
+nav technonewslogo, .nav technonewslogo {
+  justify-content: space-around;
+  align-items: center;
+}
+nav .ti, .nav .ti {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}/*# sourceMappingURL=nav.css.map */

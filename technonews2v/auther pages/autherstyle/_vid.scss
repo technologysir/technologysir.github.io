@@ -1,0 +1,32 @@
+.list-v{
+
+    display: flex;
+    @media screen and (max-width:536px) {
+        display: grid;
+        
+    }
+    .op{
+        margin: 25px;
+        background-color: #404040;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+        text-align: center;
+    }
+    .op:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .hj{
+        width: 100px;
+        height: 100px;
+    }
+}
+.vbox{
+    background-color: #353535;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 1px 8px #353535bf;
+}

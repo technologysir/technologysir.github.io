@@ -1,0 +1,21 @@
+.parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 10px;
+}
+.parts-l {
+  flex: 10% 0 0;
+  background-color: beige;
+  max-width: 360px;
+}
+.parts-m {
+  flex: 65% 0 0;
+  background-color: floralwhite;
+  max-width: 680px;
+}
+.parts-r {
+  flex: 25% 0 0;
+  background-color: beige;
+  max-width: 360px;
+}/*# sourceMappingURL=parts.css.map */

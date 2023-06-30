@@ -1,0 +1,51 @@
+.fr{
+    position: fixed;
+    z-index: 1000000;
+    margin: 10px;
+    background-color: #000000;  
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 3px 8px #000000;
+    @media only screen and (max-width:1194px) {
+        box-shadow: 0 0px 20000px #fff;
+    }
+    //background-color: #ffffff;
+.events {
+    &-e {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       gap: 10px;
+       margin: rem(10) 0;
+       padding: 5px;
+       transition: 0.5s;
+       border-radius: 5px;
+        img {
+            max-width: 115px;
+            border-radius: rem(5);
+            margin: 0 rem(10);
+
+          
+        }
+        
+    }
+      :hover{
+                background-color: #ffffff;
+                color: #000000;
+            }
+}
+
+.tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50;
+    color: #fff;
+}
+.events-e:hover{
+    background-color: #ffffff;   
+    &-txt{
+        color: #000000;
+    }
+}
+}

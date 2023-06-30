@@ -1,0 +1,26 @@
+//     //position:  relative;
+   //     //width: rem(660);
+   //     height: 100%;
+   //     //flex: 90% 0 0;
+   // display: flex;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+   // gap: 10px;
+   // margin: 10px ;
+   // border-radius: rem(10);
+   // box-shadow: 0 2px 2px #00000030;
+   // background-color: #00000080;
+   // background-blend-mode: multiply;
+   // justify-content: center;
+   // align-items: flex-end;
+   // gap: 10px;
+   // padding: rem(10);
+   // width: 100%;
+   // max-width: rem(660);
+   // &-txt{
+   //     color: #fff;
+   //     font-size: 1rem;
+   //     font-weight: 500;
+   //     text-shadow: 1px 1px 1px #0000008b;
+   // }

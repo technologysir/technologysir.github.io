@@ -9,7 +9,7 @@ body{
 }
 section{
     position: relative;
-    background: url('../../img/bg.svg'); 
+    background: url('../img/bg.svg'); 
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
