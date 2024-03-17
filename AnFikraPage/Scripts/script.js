@@ -14,24 +14,38 @@ var firebaseConfig = {
   // Initialize variables
   const auth = firebase.auth()
   const database = firebase.database()
-  
+  //Defind holder hint
+  const holder = document.getElementById('holder')
+  function holdAlert(alert) {
+    holder.style = 'display : block;'
+    holder.innerText = alert
+  }
   // Set up our register function
   function register () {
+    //PreHolder
+    holder.style = 'display : none;'
     // Get all our input fields
     email = document.getElementById('email').value
     password = (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6);
     full_name = document.getElementById('full_name').value
+    age = document.getElementById('age').value
+    ProjectName = document.getElementById('ProjectName').value
+    Organization = document.getElementById('Organization').value
+    SchooleLevel = document.getElementById('SchooleLevel').value
+    Wilaya = document.getElementById('Wilaya').value
+    PhoneNumber = document.getElementById('PhoneNumber').value
+    PrjPro = document.getElementById('PrjPro').value
     ProjectName = document.getElementById('ProjectName').value
     ProjectCatgory = document.getElementById('ProjectCatgory').value
   
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Email or Password is Outta Line!!')
+      holdAlert('!أكمل تعبئة البيانات')
       return
       // Don't continue running the code
     }
-    if (validate_field(full_name) == false || validate_field(ProjectName) == false || validate_field(ProjectCatgory) == false) {
-      alert('One or More Extra Fields is Outta Line!!')
+    if (validate_field(full_name) == false || validate_field(ProjectName) == false || validate_field(ProjectCatgory) == false || validate_field(age) == false || validate_field(Organization) == false || validate_field(SchooleLevel) == false || validate_field(PrjPro) == false || validate_field(PhoneNumber) == false || validate_field(Wilaya) == false) {
+      holdAlert('!أكمل تعبئة البيانات')
       return
     }
    
@@ -40,14 +54,18 @@ var firebaseConfig = {
     .then(function() {
       // Declare user variable
       var user = auth.currentUser
-  
       // Add this user to Firebase Database
       var database_ref = database.ref()
-  
       // Create User data
       var user_data = {
         email : email,
         hexId: password,
+        PhoneNumber : PhoneNumber,
+        Age: age,
+        SchooleLevel:SchooleLevel,
+        Organization:Organization,
+        Wilaya:Wilaya,
+        UsedProgram : PrjPro,
         full_name : full_name,
         ProjectName : ProjectName,
         ProjectCatgory : ProjectCatgory,
@@ -58,62 +76,15 @@ var firebaseConfig = {
       database_ref.child('users/' + user.uid).set(user_data)
   
       // DOne
-      alert('User Created!!')
+      console.log('User Created!!')
     })
     .catch(function(error) {
-      // Firebase will use this to alert of its errors
+      // Firebase will use this to console.log of its errors
       var error_code = error.code
       var error_message = error.message
-  
-      alert(error_message)
+      holdAlert(error_message)
     })
   }
-  
-  // Set up our login function
-  function login () {
-    // Get all our input fields
-    email = document.getElementById('email').value
-    password = document.getElementById('password').value
-  
-    // Validate input fields
-    if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Email or Password is Outta Line!!')
-      return
-      // Don't continue running the code
-    }
-  
-    auth.signInWithEmailAndPassword(email, password)
-    .then(function() {
-      // Declare user variable
-      var user = auth.currentUser
-  
-      // Add this user to Firebase Database
-      var database_ref = database.ref()
-  
-      // Create User data
-      var user_data = {
-        last_login : Date.now()
-      }
-  
-      // Push to Firebase Database
-      database_ref.child('users/' + user.uid).update(user_data)
-  
-      // DOne
-      alert('User Logged In!!')
-  
-    })
-    .catch(function(error) {
-      // Firebase will use this to alert of its errors
-      var error_code = error.code
-      var error_message = error.message
-  
-      alert(error_message)
-    })
-  }
-  
-  
-  
-  
   // Validate Functions
   function validate_email(email) {
     expression = /^[^@]+@\w+(\.\w+)+\w$/

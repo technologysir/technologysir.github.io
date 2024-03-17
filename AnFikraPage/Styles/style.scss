@@ -21,7 +21,7 @@ body{
 }
 #form_container{
   position: relative;
-  padding: 20px;
+  //padding: 20px;
   background: rgba(255, 255, 255,0.25);
   backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255,0.5);
@@ -46,6 +46,16 @@ body{
 #form_container #form_content_inner_container{
   position: relative;
 }
+#form_container #form_header_container{
+  background-color: #fff;
+  width: 100%;
+  border-top-left-radius:20px ;
+  border-top-right-radius:20px ;
+  padding: 10px;
+}
+#form_container #form_content_container{
+  padding: 20px;
+}
 #form_container #form_content_inner_container input{
   position: relative;
   width: 100%;
@@ -62,23 +72,24 @@ body{
   color: #5e76ff;
   transition: 0.5s;
 }
-#form_container #form_content_inner_container input#full_name:hover,#form_container #form_content_inner_container input#ProjectCatgory:hover,#form_container #form_content_inner_container input#email:hover,#form_container #form_content_inner_container input#ProjectName:hover{
+#form_container #form_content_inner_container input#full_name:hover,#form_container #form_content_inner_container input#ProjectCatgory:hover,#form_container #form_content_inner_container input#email:hover,#form_container #form_content_inner_container input#ProjectName:hover,#form_container #form_content_inner_container input#PrjPro:hover,#form_container #form_content_inner_container input#age:hover,#form_container #form_content_inner_container input#PhoneNumber:hover{
   color: #ce0067ff;
   border-bottom:3px solid #ce0067ff;
 }
-#form_container #form_content_inner_container input#full_name,#form_container #form_content_inner_container input#ProjectCatgory,#form_container #form_content_inner_container input#email,#form_container #form_content_inner_container input#ProjectName{
+#form_container #form_content_inner_container input#full_name,#form_container #form_content_inner_container input#ProjectCatgory,#form_container #form_content_inner_container input#email,#form_container #form_content_inner_container input#ProjectName,#form_container #form_content_inner_container input#PrjPro,#form_container #form_content_inner_container input#age,#form_container #form_content_inner_container input#PhoneNumber{
   border-bottom:3px solid #239ec7ff;
   transition: 0.5s;
 }
 #form_container #form_content_inner_container:hover ::placeholder{
   color: #ce0067ff;
 }
-#form_container #form_content_inner_container button{
+#form_container #form_content_inner_container button,#form_container #form_content_inner_container select{
   position: relative;
   border: none;
   outline: none;
   padding: 15px 20px;
   width: 100%;
+  margin-bottom: 30px;
   background: #239ec7ff;
   color: #fff;
   cursor: pointer;
@@ -87,7 +98,22 @@ body{
   font-weight: 500;
   transition: 0.5s;
 }
-#form_container #form_content_inner_container button:hover{
+#form_container #form_content_inner_container #holder{
+  position: relative;
+  display: none;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  width: 100%;
+  background: #ce0067ff;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+#form_container #form_content_inner_container button:hover,#form_container #form_content_inner_container select:hover{
   background: #ce0067ff;
   color: #fff;
 }
