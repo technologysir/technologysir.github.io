@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <title>التسجيل للمشاركة في المسابقة</title>
+        <link rel="stylesheet" type="text/css" href="./Styles/style.css">
+        <link rel="shortcut icon" href="https://github.com/technologysir/technologysir.github.io/blob/main/FIKRA_TECH/img/fikralogo.png?raw=true" type="image/x-icon">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header">نموذج التسجيل في مسابقة صالون الطفل المخترع الطبعة الثانية</h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="الاسم واللقب">
+                        </div><div id="form_content_inner_container">
+                        <input type="number" id="age" placeholder="العمر">
+                        </div><div id="form_content_inner_container">
+                            <select id="SchooleLevel" placeholder="المستوى الدراسي" >
+                                <option value="التعليم الابتدائي"style="padding: 4px;">التعليم الابتدائي</option>
+                                <option value="التعليم المتوسط"style="padding: 4px;">التعليم المتوسط</option>
+                                <option value="التعليم الثانوي"style="padding: 4px;">التعليم الثانوي</option>
+                                <option value="التعليم الجامعي"style="padding: 4px;">التعليم الجامعي</option>
+                            </select>
+                        </div><div id="form_content_inner_container">
+                        <input type="text" id="Organization" placeholder="مؤسسة التدريب التابع لها">
+                        </div><div id="form_content_inner_container">
+                        <input type="text" id="Wilaya" placeholder="الولاية">
+                        </div><div id="form_content_inner_container">
+                        <input type="email" id="email" placeholder="البريد الالكتروني">
+                        </div><div id="form_content_inner_container">
+                        <input type="tel" id="PhoneNumber" placeholder="رقم الهاتف">
+                        </div><div id="form_content_inner_container">
+                            <select id="ProjectCatgory" placeholder="فئة المشروع" >
+                                <option value="برمجة"style="padding: 4px;">برمجة</option>
+                                <option value="تصميم"style="padding: 4px;">تصميم</option>
+                                <option value="روبوتيك"style="padding: 4px;">روبوتيك</option>
+                            </select>
+                        </div><div id="form_content_inner_container">
+                        <input type="text" id="ProjectName" placeholder="اسم المشروع">
+                        </div><div id="form_content_inner_container">
+                        <input type="text" id="PrjPro" placeholder="لغة البرمجة أو البرنامج  المستعمل">
+                        </div><div id="form_content_inner_container">
+                        <h1 id="holder"></h1>
+                        </div><div id="form_content_inner_container">      
+                        <div id="button_container">
+                            <button onclick="register()">التسجيل</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="./Scripts/script.js"></script>
+
+</html>
