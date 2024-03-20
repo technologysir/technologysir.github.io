@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 800;
+  font-size: 1em;
+}
+
+body {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: left;
+}
+
+.sidbar {
+  position: relative;
+  align-items: center;
+  padding: 30px;
+  width: 20vw;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(236, 236, 236, 0);
+  box-shadow: 0px 0px 15px #2e2b33;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  background-repeat: none;
+  left: 0;
+  top: 0;
+}
+
+.Promrovideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.QA {
+  padding: 30px;
+  width: 100%;
+}
+
+.QA .bord .Q:hover, .QA .bord .A:hover {
+  padding: 20px;
+}
+
+.QA .bord .Q {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3882352941);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 10px;
+  margin: 3px;
+  transition: 0.5s;
+}
+
+.QA .bord .A {
+  padding: 15px;
+  background: rgba(129, 129, 129, 0.3882352941);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 10px;
+  margin: 3px;
+  transition: 0.5s;
+}
+
+.QA .bord {
+  width: 100%;
+  padding: 30px;
+}
+
+.QA .inpbx {
+  position: fixed;
+  z-index: 9999;
+  padding: 5px;
+  width: 80%;
+  bottom: 2px;
+  text-align: center;
+  display: flex;
+}
+
+.QA .inpbx input.sceh:focus {
+  width: 100%;
+  height: 60px;
+}
+
+.QA .inpbx input.sceh {
+  background: rgba(236, 236, 236, 0);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border: none;
+  outline: none;
+  color: #ffffff;
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px #2e2b33;
+  left: 0;
+  transition: 0.5s;
+}
+
+.QA .inpbx input.sceh:hover {
+  box-shadow: 0px 0px 25px #535157;
+}
+
+.sidbar .inpbx {
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.sidbar .inpbx input.sceh::-moz-placeholder {
+  color: #ffffff;
+}
+
+.sidbar .inpbx input.sceh::placeholder {
+  color: #ffffff;
+}
+
+.QA .inpbx input.sceh::-moz-placeholder {
+  color: #ffffff;
+}
+
+.QA .inpbx input.sceh::placeholder {
+  color: #ffffff;
+}
+
+.QA .inpbx button {
+  background: rgba(255, 255, 255, 0.2666666667);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border: none;
+  outline: none;
+  width: 15%;
+  height: auto;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px #777777;
+  left: 0;
+  transition: 0.5s;
+}
+
+.sidbar .inpbx button {
+  background: rgba(255, 255, 255, 0.2666666667);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border: none;
+  outline: none;
+  width: 15%;
+  height: 35px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px #777777;
+  left: 0;
+  transition: 0.5s;
+}
+
+.sidbar .inpbx input.sceh {
+  background: rgba(236, 236, 236, 0);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 35px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px #2e2b33;
+  left: 0;
+  transition: 0.5s;
+}
+
+.sidbar .inpbx input.sceh:focus {
+  width: 85%;
+}
+
+.sidbar .inpbx input.sceh:hover {
+  box-shadow: 0px 0px 25px #535157;
+}
+
+.sidbar .inpbx::after {
+  height: 1px;
+  width: 90%;
+  background: #2e2b33;
+  z-index: 1000000;
+}
+
+.buttomchoises {
+  margin-top: 50vh;
+}
+
+.fsqu .one:hover {
+  background-color: #535157;
+  box-shadow: 0px 0px 20px #545355;
+}
+
+.fsqu {
+  left: 0;
+  transition: 0.5s;
+}
+
+.fsqu .one {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.sidbar .choise {
+  padding: 10px;
+  border-radius: 5px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.sidbar .choise:hover {
+  background-color: #535157;
+  box-shadow: 0px 0px 20px #545355;
+}/*# sourceMappingURL=style.css.map */

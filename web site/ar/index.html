@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Benta</title>
+</head>
+<video autoplay muted loop style="position: fixed;right: 0;bottom: 0;min-width: 100%;min-height: 100%;">
+    <source src="./vid.mp4" type="video/mp4">
+</video>
+<body>
+<section class="sidbar">
+    <div class="inpbx">
+        <input type="text" name="s1" class="sceh" id="s1" placeholder=" اضافة">
+        <button onclick="add()">+</button>     
+        </div>
+    <h2 id="alt" style="background-color: #ff00005d;backdrop-filter: blur(7px);width: 100%;border-radius: 5px;text-align: center;"></h2>
+    <div class="fsqu" id="Menu_1">
+        <div class="one" ><p id="doAsk" onclick="doAsk(this.innerText)">من أنت</p></div>
+    </div>
+    
+    <div class="buttomchoises">
+        <hr>
+        <div class="choise"><p onclick="reset()"><i class="ri-refresh-line"></i>  اعادة ضبط</p></div>
+        <div class="choise"><p onclick="copytxt()"><i class="ri-save-line" ></i>  حفظ المحادثة</p></div>
+        <div class="choise"><p onclick="showimportarea()"><i class="ri-download-2-line"></i>  رفع المحادثة</p></div>
+        <div class="choise"><p onclick="help()"><i class="ri-question-line" ></i> مساعدة</p></div>
+    </div>
+</section>
+<section class="QA">
+    <div class="bord" id="Q">
+        <div class="A"><i>Benta:</i ><p>مرحبا بما يمكنني مساعدتك؟</p></div>
+    </div>
+    <div class="inpbx">
+        <input type="text" name="sceh" class="sceh" id="s2" placeholder=" اكتب شيئا هنا ...">
+        <button onclick="Ask()">></button>
+    </div>
+</section>
+<div id="importarea" style="display: none;">
+    <h1 style="font-size: 2em;padding: 50px;">رفع المحادثة</h1>
+<input type="text" name="" id="importbox" style="width: 90%;height: 50px;top: 50%;left: 5%;right: 5%;border-radius: 10px;border: none;outline: none;background: #ececec00;box-shadow:0px 0px 15px #2e2b33;backdrop-filter: blur(7px);padding: 30px;" placeholder=" انسح هنا">
+<button style="background: #ffffff44;backdrop-filter: blur(7px);border: none;outline: none;width: 15%;height: 35px;color: #ffffff;border-radius: 5px;padding: 30px;margin: 20px;box-shadow:0px 0px 15px #777777;left: 0;transition: 0.5s;" onclick="importtxt()">تم</button>
+<script src="./script.js"></script>
+</body>
+</html>
