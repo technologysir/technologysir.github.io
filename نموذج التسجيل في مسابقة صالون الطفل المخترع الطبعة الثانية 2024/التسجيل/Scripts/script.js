@@ -42,12 +42,20 @@ var firebaseConfig = {
   
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-      holdAlert('!أكمل تعبئة البيانات')
-      return
+      email = 'NOEMAIL'+Date.now().toString()+'@NOEMAIL.com'
+      //holdAlert('!أكمل تعبئة البيانات')
+      //return
       // Don't continue running the code
     }
     if (validate_field(full_name) == false || validate_field(ProjectName) == false || validate_field(ProjectCatgory) == false || validate_field(age) == false || validate_field(Organization) == false || validate_field(SchooleLevel) == false || validate_field(PrjPro) == false || validate_field(PhoneNumber) == false || validate_field(Wilaya) == false) {
       holdAlert('!أكمل تعبئة البيانات')
+      return
+    }
+    if (validate_field(full_name) == false) {
+      email = 'NOEMAIL'+Date.now().toString()+'@NOEMAIL.com'
+    }
+    if (ProjectName.length <= 9 || incsym(ProjectName) || incsym(full_name) ) {
+      holdAlert('!الاسم أواسم المشروع غير صالح')
       return
     }
    
@@ -79,7 +87,7 @@ var firebaseConfig = {
       fullscreen_alert.style.display = "block";
       console.log('User Created!!')
       setTimeout(function () {
-        window.open("../","_self")
+        //window.open("../","_self")
       }, 3000);
       
       // DOne
@@ -130,5 +138,15 @@ closebtn.onclick = function() {
 window.onclick = function(event) {
   if (event.target == fullscreen_alert) {
     fullscreen_alert.style.display = "none";
+  }
+}
+function incsym(txt) {
+  var format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+  if (format.test(txt) == true) {
+    // Email is good
+    return true
+  } else {
+    // Email is not good
+    return false
   }
 }
