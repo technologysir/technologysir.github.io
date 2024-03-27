@@ -54,7 +54,7 @@ var firebaseConfig = {
     if (validate_field(full_name) == false) {
       email = 'NOEMAIL'+Date.now().toString()+'@NOEMAIL.com'
     }
-    if (ProjectName.length <= 9 || incsym(ProjectName) || incsym(full_name) ) {
+    if (ProjectName.length <= 9) {
       holdAlert('!الاسم أواسم المشروع غير صالح')
       return
     }
